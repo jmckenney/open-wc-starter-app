@@ -1,5 +1,6 @@
 import { LitElement, html, css } from 'lit-element';
 import { openWc } from './open-wc-logo';
+import './wc-with-styles';
 
 class MyApp extends LitElement {
   static get properties() {
@@ -18,7 +19,6 @@ class MyApp extends LitElement {
       css`
         :host {
           text-align: center;
-          min-height: 100vh;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -75,6 +75,7 @@ class MyApp extends LitElement {
         🚽 Made with love by
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/open-wc">open-wc</a>.
       </p>
+      <wc-with-styles></wc-with-styles>
     `;
   }
 }
